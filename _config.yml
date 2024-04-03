@@ -8,6 +8,9 @@ twitter_username: betooliveirame
 github_username:  betoliveirame
 paginate: 5
 
+sass:
+  sass_dir: _sass
+
 plugins:
   - jekyll-feed
   - jekyll-gist
