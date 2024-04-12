@@ -1,0 +1,26 @@
+.posts {
+  &.summary {
+    .post {
+     .post-title a {
+      width: 100%;
+      text-decoration: none;   
+      color: inherit;
+      font-weight: bold;
+      &:hover {
+        text-decoration: underline;
+      }
+     }
+     .post-date {
+     } 
+     .post-tags {
+        a {
+          text-decoration: none;
+          color: inherit;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

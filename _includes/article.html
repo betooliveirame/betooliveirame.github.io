@@ -1,0 +1,22 @@
+  <article class="post row gy-3">
+      <div class="col-12 col-sm-3">
+        <img src="/assets/images/{{ post.coverImage }}" class="post-image post-image-home img-thumbnail rounded" alt="Cover Image"/>
+      </div>
+      <div class="col-12 col-sm-9">
+        <h2 class="post-title">
+          <a href="{{ post.url | relative_url }}">
+            {{ post.title }}
+          </a>
+        </h2>
+        <p class="post-meta">
+          <span>Postado em </span>
+          <span><time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time></span>
+        </p>
+        <p class="post-tags">Tags:
+          {% for tag in post.tags %}
+              <a href="/tags/#{{ tag }}">#{{ tag }}</a>
+          {% endfor %}
+        </p>
+      </div>
+  </article>
+  <hr>
