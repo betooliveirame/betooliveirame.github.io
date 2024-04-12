@@ -36,7 +36,7 @@ exclude:
   - CNAME
 
 nav:
-  - title: Posts
+  - title: Historico
     url: /archive
 
   - title: Sobre
