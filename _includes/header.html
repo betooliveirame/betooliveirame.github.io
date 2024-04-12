@@ -1,6 +1,13 @@
 <header>
-  <h1 class="masthead-title p-6">
-    <a href="{{ '/' | relative_url }}" title="Home">{{ site.title }}</a>
-  </h1>
-  <p class="masthead-description p-6">{{ site.description }}</p>
+  <div class="row">
+    <div class="col-sm-10">
+      <h1 class="masthead-title p-6">
+      <a href="{{ '/' | relative_url }}" title="Home">{{ site.title }}</a>
+      </h1>
+      <p class="masthead-description p-6">{{ site.description }}</p>
+    </div>
+    <div class="col-sm-2">
+      {% include nav.html %}
+    </div>
+  </div>
 </header>
