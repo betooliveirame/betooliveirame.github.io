@@ -1,24 +1,34 @@
 <article class="post row gy-4">
-    <div class="col-12 col-sm-3">
-      <a href="{{ post.url | relative_url }}">
-        <img src="/assets/images/{{ post.coverImage }}" class="post-image post-image-home img-thumbnail rounded" alt="Cover Image"/>
+    <div class="col-12">
+      <h2 class="post-title">
+        {{ include.post.title }}
+      </h2>
+      <p class="post-meta">
+        <span class="post-date">
+          <time datetime="{{ include.post.date | date_to_xmlschema }}" class="post-date">
+            {% include locale-date.html date=include.post.date format="%-d %B %Y" lang="br" %}
+          </time>
+        </span>|
+        <span class="post-read-time">
+          {% include read-time.html content=include.post.content %} Minutos de leitura
+        </span>
+      </p>
+    </div>
+    {% if include.post.coverImage %}
+    <div class="col-12">
+      <a href="{{ include.post.url | relative_url }}">
+        <img src="/assets/images/{{ include.post.coverImage }}" class="post-image post-image-home img-fluid rounded" alt="Cover Image" style="width: 100%;">
       </a>
     </div>
-    <div class="col-12 col-sm-9">
-     <p class="post-meta">
-      <span class="post-date">
-        <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date" datetime="{{ post.date | date_to_xmlschema }}">
-          {% include locale-date.html date=post.date format="%-d %B %Y" lang="br" %}
-        </time>
-      </span>
-     </p>
-     <h2 class="post-title">
-        <a href="{{ post.url | relative_url }}">
-          {{ post.title }}
-        </a>
-      </h2>
-      <p class="post-tags">
-        {% for tag in post.tags %}
+    {% endif %}
+    <div class="col-12">
+      <div class="post-content">
+        {{ include.post.content }}
+      </div>
+    </div>
+    <div class="col-12">
+       <p class="post-tags">
+        {% for tag in include.post.tags %}
           <span class="post-tag">
             <a href="/tags/#{{ tag }}">#{{ tag }}</a>
           </span>

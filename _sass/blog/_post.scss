@@ -1,34 +1,29 @@
-.posts {
-  &.summary {
-    .post {
-     .post-title a {
-      text-decoration: none;   
-      color: inherit;
-      font-weight: bold;
-      &:hover {
-        text-decoration: underline;
-      }
-     }
-     .post-date {
-     } 
-      .post-tags {
-        .post-tag {
-          margin-right: $spacer * 0.5;
-          a {
-              text-decoration: none;
-              font-size: $body-font-size * 0.8;
-              font-style: italic;
-              color: #adb5bd;
-              &:hover {
-                text-decoration: underline;
-                color: inherit;
-              }
-            }
-          }
-        }
+.post {
+  .post-title a {
+    text-decoration: none;   
+    color: inherit;
+    font-weight: bold;
+    &:hover {
+      text-decoration: underline;
     }
   }
+  .post-tags {
+    .post-tag {
+      margin-right: $spacer * 0.5;
+      a {
+          text-decoration: none;
+          font-size: $body-font-size * 0.8;
+          font-style: italic;
+          color: #adb5bd;
+          &:hover {
+            text-decoration: underline;
+            color: inherit;
+          }
+        }
+      }
+    }
 }
+
 .post {
   .post-image {
     img {
@@ -39,4 +34,8 @@
     font-family: $body-font;
     font-size: $body-font-size;
   }
+}
+
+.comments {
+  margin-bottom: $spacer * 2;
 }

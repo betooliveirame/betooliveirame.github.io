@@ -1,0 +1,33 @@
+<article class="post row gy-4">
+    <div class="col-12 col-sm-3">
+      <a href="{{ include.post.url | relative_url }}">
+        <img src="/assets/images/{{ include.post.coverImage }}" class="post-image post-image-home img-thumbnail rounded" alt="Cover Image">
+      </a>
+    </div>
+    <div class="col-12 col-sm-9">
+     <p class="post-meta">
+      <span class="post-date">
+        <time datetime="{{ include.post.date | date_to_xmlschema }}" class="post-date">
+          {% include locale-date.html date=include.post.date format="%-d %B %Y" lang="br" %}
+        </time>
+      </span>|
+      <span class="post-read-time">
+        {% include read-time.html content=include.post.content post=include.post %} Minutos de leitura
+      </span>
+     </p>
+     <h2 class="post-title">
+        <a href="{{ include.post.url | relative_url }}">
+          {{ include.post.title }}
+        </a>
+      </h2>
+      <p class="post-tags">
+        {% for tag in include.post.tags %}
+          <span class="post-tag">
+            <a href="/tags/#{{ tag }}">#{{ tag }}</a>
+          </span>
+        {% endfor %}
+      </p>
+      {% include share-buttons.html %}
+    </div>
+</article>
+<hr>

@@ -2,16 +2,6 @@ footer {
   margin-top: $spacer * 1.5;
   margin-bottom: $spacer * 1.5;
   font-weight: bold;
-  .footer-links {
-    a {
-      text-decoration: none;
-      color: inherit;
-      font-weight: normal;
-      &:hover {
-        text-decoration: underline;  
-      }
-    }
-  }
 }
 
 

@@ -9,3 +9,27 @@
     max-width: $body-max-width;
   }
 }
+
+.social-links {
+  a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: normal;
+    &:hover {
+      text-decoration: underline;  
+    }
+  }
+}
+.share-links {
+  .share-button {
+    margin-right: $spacer * 0.5;
+    a {
+      text-decoration: none;
+      color: inherit;
+      font-weight: normal;
+      &:hover {
+        color: #0d6efd;
+      }
+    }
+  }
+}
