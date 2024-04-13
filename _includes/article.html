@@ -1,6 +1,8 @@
   <article class="post row gy-3">
       <div class="col-12 col-sm-3">
-        <img src="/assets/images/{{ post.coverImage }}" class="post-image post-image-home img-thumbnail rounded" alt="Cover Image"/>
+        <a href="{{ post.url | relative_url }}">
+          <img src="/assets/images/{{ post.coverImage }}" class="post-image post-image-home img-thumbnail rounded" alt="Cover Image"/>
+        </a>
       </div>
       <div class="col-12 col-sm-9">
         <h2 class="post-title">

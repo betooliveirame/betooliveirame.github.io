@@ -1,5 +1,13 @@
 header {
-    padding-top: $spacer;
-    padding-bottom: $spacer;
-    margin-bottom: $spacer * 3;
+  margin-top: $spacer * 1.5;
+  margin-bottom: $spacer * 1.5;
+  .masthead-title a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+  }
+  .masthead-description {
+    font-style: italic;
+  }
 }
+

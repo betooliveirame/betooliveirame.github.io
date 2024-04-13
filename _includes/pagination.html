@@ -1,6 +1,6 @@
 <nav aria-label="Page navigation example">
   <ul class="pagination justify-content-center">
-    <li class="page-item {% if paginator.previous_page %}disabled{% endif %}"><a class="page-link" href="{{ paginator.next_page_path | prepend: relative_url }}">Pagina anterior</a></li>
-    <li class="page-item {% if paginator.next_page %}disabled{% endif %}"><a class="page-link" href="{{ paginator.previous_page_path | prepend: relative_url }}">Próxima pagina</a></li>
+  <li class="page-item {% if paginator.previous_page %}disabled{% endif %}"><a class="page-link" href="{{ paginator.next_page_path | prepend: relative_url }}">&laquo; Anteriores</a></li>
+    <li class="page-item {% if paginator.next_page %}disabled{% endif %}"><a class="page-link" href="{{ paginator.previous_page_path | prepend: relative_url }}">Próximas &raquo;</a></li>
   </ul>
 </nav>

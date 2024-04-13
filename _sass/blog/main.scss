@@ -1,6 +1,8 @@
 // blog
-
-@import "_images";
-@import "_post";
-@import "_header";
-@import "_cover";
+@import "variables";
+@import "root";
+@import "header";
+@import "footer";
+@import "post";
+@import "pagination";
+@import "typography";

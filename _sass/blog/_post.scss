@@ -2,7 +2,6 @@
   &.summary {
     .post {
      .post-title a {
-      width: 100%;
       text-decoration: none;   
       color: inherit;
       font-weight: bold;
@@ -12,7 +11,7 @@
      }
      .post-date {
      } 
-     .post-tags {
+      .post-tags {
         a {
           text-decoration: none;
           color: inherit;
@@ -22,5 +21,16 @@
         }
       }
     }
+  }
+}
+.post {
+  .post-image {
+    img {
+      width: 100%;
+    }
+  }
+  .post-content p {
+    font-family: $body-font;
+    font-size: $body-font-size;
   }
 }
