@@ -1,24 +1,29 @@
-  <article class="post row gy-3">
-      <div class="col-12 col-sm-3">
+<article class="post row gy-4">
+    <div class="col-12 col-sm-3">
+      <a href="{{ post.url | relative_url }}">
+        <img src="/assets/images/{{ post.coverImage }}" class="post-image post-image-home img-thumbnail rounded" alt="Cover Image"/>
+      </a>
+    </div>
+    <div class="col-12 col-sm-9">
+     <p class="post-meta">
+      <span class="post-date">
+        <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date" datetime="{{ post.date | date_to_xmlschema }}">
+          {% include locale-date.html date=post.date format="%-d %B %Y" lang="br" %}
+        </time>
+      </span>
+     </p>
+     <h2 class="post-title">
         <a href="{{ post.url | relative_url }}">
-          <img src="/assets/images/{{ post.coverImage }}" class="post-image post-image-home img-thumbnail rounded" alt="Cover Image"/>
+          {{ post.title }}
         </a>
-      </div>
-      <div class="col-12 col-sm-9">
-        <h2 class="post-title">
-          <a href="{{ post.url | relative_url }}">
-            {{ post.title }}
-          </a>
-        </h2>
-        <p class="post-meta">
-          <span>Postado em </span>
-          <span><time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time></span>
-        </p>
-        <p class="post-tags">Tags:
-          {% for tag in post.tags %}
-              <a href="/tags/#{{ tag }}">#{{ tag }}</a>
-          {% endfor %}
-        </p>
-      </div>
-  </article>
-  <hr>
+      </h2>
+      <p class="post-tags">
+        {% for tag in post.tags %}
+          <span class="post-tag">
+            <a href="/tags/#{{ tag }}">#{{ tag }}</a>
+          </span>
+        {% endfor %}
+      </p>
+    </div>
+</article>
+<hr>

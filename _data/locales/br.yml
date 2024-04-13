@@ -1,0 +1,44 @@
+# Strings for dates
+# language English
+abbreviated_weekday:
+  - Dom
+  - Seg
+  - ter
+  - Quar
+  - Quin
+  - Sex
+  - Sab
+full_weekday:
+  - Domingo
+  - Segunda
+  - Terça
+  - Quarta
+  - Quinta
+  - Sexta
+  - Sábado
+abbreviated_month:
+  - Jan
+  - Fev
+  - Mar
+  - Abr
+  - Mai
+  - Jun
+  - Jul
+  - Ago
+  - Set
+  - Out
+  - Nov
+  - Dez
+full_month:
+  - Janeiro
+  - Fevereiro
+  - Marco
+  - Abril
+  - Maio
+  - Junho
+  - Julho
+  - Agosto
+  - Setembro
+  - Outubro
+  - Novembro
+  - Dezembro

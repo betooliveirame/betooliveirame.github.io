@@ -4,7 +4,9 @@ layout: default
 
 <article class="post row gy-3">
   <h1 class="post-title">{{ page.title }}</h1>
-  <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date_to_string }}</time>
+  <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date" datetime="{{ page.date | date_to_xmlschema }}">
+    {% include locale-date.html date=page.date format="%-d %B %Y" lang="br" %}
+  </time>
   {% if page.coverImage %}
   <div class="post-image">
     <img src="/assets/images/{{ page.coverImage }}" class="img-thumbnail img-fluid" alt="Cover Image"/>
