@@ -3,6 +3,7 @@ layout: post
 comments: true
 title: "A arquitetura do Bootstrap do Adobe Commerce | Parte 1"
 date: "2023-06-08"
+author: "Herbert de Oliveira"
 categories: 
   - "geral"
   - "software-engineering"

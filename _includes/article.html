@@ -13,6 +13,7 @@
           {% include read-time.html content=include.post.content %} Minutos de leitura
         </span>
       </p>
+      {% include share-buttons.html %}
     </div>
     {% if include.post.coverImage %}
     <div class="col-12">
@@ -36,4 +37,6 @@
       </p>
     </div>
 </article>
-<hr>
+<div class="share-buttons-post-bottom row gy-4">
+{% include share-buttons.html %}
+</div>

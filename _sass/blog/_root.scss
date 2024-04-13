@@ -20,7 +20,7 @@
     }
   }
 }
-.share-links {
+.share-buttons {
   .share-button {
     margin-right: $spacer * 0.5;
     a {
@@ -32,4 +32,8 @@
       }
     }
   }
+}
+
+.share-buttons-post-bottom {
+  margin-bottom: $spacer * 2;
 }

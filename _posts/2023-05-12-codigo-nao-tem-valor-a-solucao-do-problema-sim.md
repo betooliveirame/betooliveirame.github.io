@@ -3,6 +3,7 @@ layout: post
 comments: true
 title: "Código não tem valor. A solução do problema sim!"
 date: "2023-05-12"
+author: "Herbert de Oliveira"
 categories: 
   - "profissionalismo"
 tags: 

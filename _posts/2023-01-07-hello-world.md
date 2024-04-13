@@ -5,6 +5,7 @@ title: "Hello World."
 date: "2023-01-07"
 categories: 
   - "geral"
+author: "Herbert de Oliveira"
 ---
 
 Olá este é um local onde pretendo começar uma jornada de conversar (escrevendo claro) sobre um assunto que gosto muito e sempre guiou a minha vida, que é a área de programação.

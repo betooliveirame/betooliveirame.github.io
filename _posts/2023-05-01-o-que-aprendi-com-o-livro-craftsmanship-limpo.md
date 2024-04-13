@@ -3,6 +3,7 @@ layout: post
 comments: true
 title: "O que aprendi com o livro Craftsmanship Limpo."
 date: "2023-05-01"
+author: "Herbert de Oliveira"
 categories: 
   - "code-quality"
   - "geral"

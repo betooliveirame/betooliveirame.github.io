@@ -3,6 +3,7 @@ layout: post
 comments: true
 title: "O desenvolvimento de software não é uma coisa linear."
 date: "2023-04-26"
+author: "Herbert de Oliveira"
 categories: 
   - "geral"
   - "software-management"

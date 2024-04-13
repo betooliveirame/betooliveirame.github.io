@@ -3,6 +3,7 @@ layout: post
 comments: true
 title: "Como ler o SonarCloud para saber para onde está indo o código da sua aplicação."
 date: "2023-04-23"
+author: "Herbert de Oliveira"
 categories: 
   - "code-quality"
   - "geral"

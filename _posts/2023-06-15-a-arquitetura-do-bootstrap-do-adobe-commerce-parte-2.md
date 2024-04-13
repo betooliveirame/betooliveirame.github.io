@@ -3,6 +3,7 @@ layout: post
 comments: true
 title: "A arquitetura do Bootstrap do Adobe Commerce | Parte 2"
 date: "2023-06-15"
+author: "Herbert de Oliveira"
 categories: 
   - "geral"
   - "magento-2"
