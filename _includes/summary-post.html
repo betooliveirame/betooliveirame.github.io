@@ -1,6 +1,6 @@
 <article class="post summary col-md-12 cotainer">
       <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="post-image col-auto col-sm-3 d-lg-block imgContainer">
+        <div class="post-image col-auto col-sm-4 d-lg-block imgContainer">
           <a href="{{ include.post.url | relative_url }}">
             <img src="/assets/images/{{ post.coverImage }}" class="bd-placeholder-img" alt="Cover Image">
           </a>
@@ -18,9 +18,9 @@
             </a>
           </h2>
           <p class="post-tags mb-auto">
-            {% for tag in include.post.tags limit:6 %}
+            {% for tag in include.post.tags limit:5 %}
               <span class="post-tag">
-                <a href="/tags/#{{ tag | url_encode }}">#{{ tag }}</a>
+                <a href="{{ site.tag_dir | prepend: '/' }}/{{ tag | uri_escape }}">#{{ tag }}</a>
               </span>
             {% endfor %}
           </p>

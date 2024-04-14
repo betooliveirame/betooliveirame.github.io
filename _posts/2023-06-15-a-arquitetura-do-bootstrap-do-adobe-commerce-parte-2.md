@@ -3,22 +3,14 @@ layout: post
 comments: true
 title: "A arquitetura do Bootstrap do Adobe Commerce | Parte 2"
 date: "2023-06-15"
-author: "Herbert de Oliveira"
 categories: 
   - "geral"
   - "magento-2"
   - "software-engineering"
-tags:
-  - arquitetura de software
-  - Adobe Commerce
-  - Magento 2
-  - bootstrap
-  - PHP
-  - MVC
-  - autoloader
-  - camada de baixo nível
-  - ObjectManager
-  - processo de inicialização
+tags: 
+  - "adobe-commerce"
+  - "softwarearchitecture"
+  - "softwareengineering"
 coverImage: "bootstrap.jpeg"
 ---
 
@@ -34,7 +26,7 @@ Este post, assim como o primeiro será altamente técnico e voltado para aqueles
 
 Voltando ao pub/index.php.....
 
-![pub/index.php](/assets/images/image-8.png?w=1024){:class="img-fluid"}
+![](/assets/images/image-8.png){:class="img-fluid"}
 
 Estrutura básica do index.php
 

@@ -3,21 +3,20 @@ layout: post
 comments: true
 title: "A arquitetura do Bootstrap do Adobe Commerce | Parte 1"
 date: "2023-06-08"
-author: "Herbert de Oliveira"
 categories: 
   - "geral"
   - "software-engineering"
-tags:
-  - arquitetura de software
-  - Adobe Commerce
-  - Magento 2
-  - bootstrap
-  - PHP
-  - MVC
-  - autoloader
-  - camada de baixo nível
-  - ObjectManager
-  - processo de inicialização
+tags: 
+  - "adobe-commerce"
+  - "arquitetura-de-software"
+  - "bootstrap"
+  - "desenvolvimento"
+  - "development"
+  - "engenharia-de-software"
+  - "magento"
+  - "magento2"
+  - "softwarearchitecture"
+  - "softwareengineering"
 coverImage: "7bwkl7.jpg"
 ---
 

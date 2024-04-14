@@ -31,7 +31,7 @@
        <p class="post-tags">
         {% for tag in include.post.tags %}
           <span class="post-tag">
-            <a href="/tags/#{{ tag }}">#{{ tag }}</a>
+            <a href="{{ site.tag_dir | prepend: '/' }}/{{ tag | uri_escape }}">#{{ tag }}</a>
           </span>
         {% endfor %}
       </p>
