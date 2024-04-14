@@ -2,25 +2,25 @@
       <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
         <div class="post-image col-auto col-sm-4 d-lg-block imgContainer">
           <a href="{{ include.post.url | relative_url }}">
-            <img src="/assets/images/{{ post.coverImage }}" class="bd-placeholder-img" alt="Cover Image">
+            <img src="/assets/images/{{ post.coverImage }}" class="bd-placeholder-img img-fluid" alt="Cover Image">
           </a>
         </div>
        <div class="col p-4 d-flex flex-column position-static">
-          <span class="post-date d-inline-block mb-2">
+          <span class="post-date d-inline-block mb-2 text-secondary-emphasis">
             <time datetime="{{ include.post.date | date_to_xmlschema }}" class="post-date">
               {% include locale-date.html date=include.post.date format="%-d %B %Y" lang="br" %}
             </time>&nbsp;|&nbsp;
             {% include read-time.html content=include.post.content post=include.post %} Minutos de leitura
           </span>
-          <h2 class="post-title mb-1">
-            <a href="{{ include.post.url | relative_url }}">
+          <h2 class="post-title mb-1 fs-3">
+            <a class="link-light link-underline link-underline-opacity-0 link-underline-opacity-100-hover" href="{{ include.post.url | relative_url }}">
               {{ include.post.title }}
             </a>
           </h2>
-          <p class="post-tags mb-auto">
+          <p class="post-tags mb-auto" >
             {% for tag in include.post.tags limit:5 %}
               <span class="post-tag">
-                <a href="{{ site.tag_dir | prepend: '/' }}/{{ tag | uri_escape }}">#{{ tag }}</a>
+                <a class="link-light text-secondary-emphasis fst-italic link-underline link-underline-opacity-0 link-underline-opacity-100-hover fs-6" href="{{ site.tag_dir | prepend: '/' }}/{{ tag | uri_escape }}">#{{ tag }}</a>
               </span>
             {% endfor %}
           </p>

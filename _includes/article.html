@@ -4,12 +4,12 @@
         {{ include.post.title }}
       </h2>
       <p class="post-meta">
-        <span class="post-date">
+        <span class="post-date text-secondary-emphasis">
           <time datetime="{{ include.post.date | date_to_xmlschema }}" class="post-date">
             {% include locale-date.html date=include.post.date format="%-d %B %Y" lang="br" %}
           </time>
         </span>|
-        <span class="post-read-time">
+        <span class="post-read-time text-secondary-emphasis">
           {% include read-time.html content=include.post.content %} Minutos de leitura
         </span>
       </p>
@@ -23,7 +23,7 @@
     </div>
     {% endif %}
     <div class="col-12">
-      <div class="post-content">
+      <div class="post-content fs-5">
         {{ include.post.content }}
       </div>
     </div>
@@ -31,7 +31,7 @@
        <p class="post-tags">
         {% for tag in include.post.tags %}
           <span class="post-tag">
-            <a href="{{ site.tag_dir | prepend: '/' }}/{{ tag | uri_escape }}">#{{ tag }}</a>
+            <a class="link-light text-secondary-emphasis fst-italic link-underline link-underline-opacity-0 link-underline-opacity-100-hover fs-6" href="{{ site.tag_dir | prepend: '/' }}/{{ tag | uri_escape }}">#{{ tag }}</a>
           </span>
         {% endfor %}
       </p>

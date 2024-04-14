@@ -12,7 +12,7 @@ Todos os posts por mês e ano
   <h2>{{ yearMonth.name }}</h2>
  <ul>
     {% for post in yearMonth.items %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      <li><a class="link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover" href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
 {% endfor %}
