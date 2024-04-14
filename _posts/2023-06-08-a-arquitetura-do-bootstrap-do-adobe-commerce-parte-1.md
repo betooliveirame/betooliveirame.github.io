@@ -7,17 +7,17 @@ author: "Herbert de Oliveira"
 categories: 
   - "geral"
   - "software-engineering"
-tags: 
-  - "adobe-commerce"
-  - "arquitetura-de-software"
-  - "bootstrap"
-  - "desenvolvimento"
-  - "development"
-  - "engenharia-de-software"
-  - "magento"
-  - "magento2"
-  - "softwarearchitecture"
-  - "softwareengineering"
+tags:
+  - arquitetura de software
+  - Adobe Commerce
+  - Magento 2
+  - bootstrap
+  - PHP
+  - MVC
+  - autoloader
+  - camada de baixo nível
+  - ObjectManager
+  - processo de inicialização
 coverImage: "7bwkl7.jpg"
 ---
 

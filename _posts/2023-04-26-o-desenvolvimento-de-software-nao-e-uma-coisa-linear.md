@@ -8,17 +8,17 @@ categories:
   - "geral"
   - "software-management"
 tags: 
-  - "architecturedesign"
-  - "architecturemanagement"
-  - "engineeringmanagement"
-  - "softwarearchitecture"
-  - "softwaredesign"
-  - "softwaredevelopment"
-  - "softwareengineer"
-  - "softwareengineering"
-  - "softwareprojectmanagement"
-  - "softwaretesting"
-coverImage: "image-3.png"
+  - História da computação
+  - Evolução tecnológica
+  - Metodologias de desenvolvimento
+  - Manifesto Ágil
+  - Linguagens de programação
+  - Frameworks de desenvolvimento
+  - Complexidade do desenvolvimento de software
+  - Colaboração entre negócios e tecnologia
+  - Excelência na codificação
+  - Valor do software para o negócio
+coverImage: "code.jpg"
 ---
 
 O desenvolvimento de software é algo antigo, mesmo antes de T[uring](https://pt.wikipedia.org/wiki/Alan_Turing) tivemos muitos outros. Podemos descer até [Babage](https://pt.wikipedia.org/wiki/M%C3%A1quina_anal%C3%ADtica) se for o caso, mas desde sempre sabemos que: "D**esenvolver software não é fácil**!".

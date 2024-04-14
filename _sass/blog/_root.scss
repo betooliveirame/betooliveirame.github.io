@@ -37,3 +37,7 @@
 .share-buttons-post-bottom {
   margin-bottom: $spacer * 2;
 }
+.imgContainer{
+  overflow:auto;
+  object-fit: fill;
+}

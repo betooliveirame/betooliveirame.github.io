@@ -7,17 +7,17 @@ author: "Herbert de Oliveira"
 categories: 
   - "code-quality"
   - "geral"
-tags: 
-  - "cleancode"
-  - "codeoptimization"
-  - "codequality"
-  - "codereviews"
-  - "continuousdelivery"
-  - "devops"
-  - "softwareengineering"
-  - "softwarequality"
-  - "sonarcloud"
-  - "staticanalysis"
+tags:
+  - Sonarcloud
+  - Desenvolvimento de software
+  - Evolução tecnológica
+  - Metodologias ágeis
+  - Linguagens de programação
+  - Frameworks de desenvolvimento
+  - Complexidade do desenvolvimento
+  - Colaboração entre negócios e tecnologia
+  - Qualidade do código
+coverImage: "sonarcloud-1.png"
 ---
 
 ![](https://betooliveira8.files.wordpress.com/2023/04/image-2.png?w=1024)
