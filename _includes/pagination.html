@@ -1,0 +1,10 @@
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+  <li class="page-item {% if paginator.previous_page %}disabled{% endif %}">
+    <a class="page-link link-light link-underline link-underline-opacity-0 link-underline-opacity-100-hover" href="{{ paginator.next_page_path | prepend: relative_url }}">&laquo; Anteriores</a>
+  </li>
+  <li class="page-item {% if paginator.next_page %}disabled{% endif %}">
+    <a class="page-link link-light" href="{{ paginator.previous_page_path | prepend: relative_url }}">Próximas &raquo;</a>
+  </li>
+  </ul>
+</nav>

@@ -1,0 +1,13 @@
+<header class="container mt-5 mb-5">
+  <div class="row">
+    <div class="col-9 col-sm-10">
+      <h1 class="site-title">
+      <a class="link-light link-underline link-underline-opacity-0"href="{{ '/' | relative_url }}" title="Home">{{ site.title }}</a>
+      </h1>
+      <p class="site-description p-6">{{ site.description }}</p>
+    </div>
+    <div class="col-3 col-sm-2">
+      {% include nav.html %}
+    </div>
+  </div>
+</header>

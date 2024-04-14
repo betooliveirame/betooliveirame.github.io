@@ -1,0 +1,6 @@
+<div class="posts summary container">
+{% for post in paginator.posts %}
+  {% include summary-post.html post=post %}
+{% endfor %}
+</div>
+{% include pagination.html %}

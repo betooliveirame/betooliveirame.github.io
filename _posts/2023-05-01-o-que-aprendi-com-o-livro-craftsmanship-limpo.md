@@ -3,17 +3,24 @@ layout: post
 comments: true
 title: "O que aprendi com o livro Craftsmanship Limpo."
 date: "2023-05-01"
+author: "Herbert de Oliveira"
 categories: 
   - "code-quality"
   - "geral"
   - "profissionalismo"
   - "software-management"
 tags: 
-  - "cleancode"
-  - "codequality"
-  - "codereviews"
-  - "softwareengineering"
-coverImage: "image-4.png"
+  - Robert C. Martin
+  - Clean Code
+  - Craftsmanship Limpo
+  - Desenvolvimento de software
+  - Metodologias ágeis
+  - Test Driven Development (TDD)
+  - Refatoração
+  - Design de software
+  - Qualidade de código
+  - Ética profissional
+coverImage: "craftmanship.jpg"
 ---
 
 Craftsmanship limpo é um daqueles livros inspiradores e não poderia ser diferente afinal o mesmo vem do Robert C. Martin, uma lenda e inspiração na área de desenvolvimento de software em geral. Este é com certeza um livro divisor de águas, assim como foi "clean code" na minha vida. Sempre digo para meus colegas que a carreira de um programador se divide em duas partes: antes e depois de ler "clean code". O mesmo posso dizer sobre "Craftsmanship Limpo". Este livro se destaca principalmente pelo fato de reforçar as características profissionais da nossa área.
