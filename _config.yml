@@ -49,3 +49,4 @@ tag_title_prefix: "Tag: "
 # Disqus Comments
 disqus:
   shortname: herbert-de-oliveira-beto
+  url: https://betooliveira.com
