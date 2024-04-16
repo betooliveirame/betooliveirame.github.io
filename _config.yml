@@ -45,3 +45,7 @@ nav:
 
 tag_dir: tag
 tag_title_prefix: "Tag: "
+
+# Disqus Comments
+disqus:
+  shortname: herbert-de-oliveira-beto
