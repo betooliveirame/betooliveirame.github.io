@@ -18,7 +18,7 @@
             </a>
           </h2>
           <p class="post-tags mb-auto" >
-            {% for tag in include.post.tags limit:5 %}
+            {% for tag in include.post.tags limit:8 %}
               <span class="post-tag">
                 <a class="link-light text-secondary-emphasis fst-italic link-underline link-underline-opacity-0 link-underline-opacity-100-hover fs-6" href="{{ site.tag_dir | prepend: '/' }}/{{ tag | uri_escape }}">#{{ tag }}</a>
               </span>

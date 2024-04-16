@@ -4,13 +4,13 @@ comments: true
 title: "A arquitetura do Bootstrap do Adobe Commerce | Parte 2"
 date: "2023-06-15"
 categories: 
-  - "geral"
-  - "magento-2"
-  - "software-engineering"
+  - arquitetura-de-software 
 tags: 
-  - "adobe-commerce"
-  - "softwarearchitecture"
-  - "softwareengineering"
+    - arquitetura-de-software
+    - adobe-commerce
+    - desenvolvimento
+    - e-commerce
+    - tecnologia
 coverImage: "bootstrap.jpeg"
 ---
 

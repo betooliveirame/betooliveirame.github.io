@@ -5,18 +5,12 @@ title: "Como ler o SonarCloud para saber para onde está indo o código da sua a
 date: "2023-04-23"
 author: "Herbert de Oliveira"
 categories: 
-  - "code-quality"
-  - "geral"
+  - padroes-de-qualidade 
 tags:
-  - Sonarcloud
-  - Desenvolvimento de software
-  - Evolução tecnológica
-  - Metodologias ágeis
-  - Linguagens de programação
-  - Frameworks de desenvolvimento
-  - Complexidade do desenvolvimento
-  - Colaboração entre negócios e tecnologia
-  - Qualidade do código
+    - padroes-de-qualidade
+    - desenvolvimento
+    - tecnologia
+
 coverImage: "sonarcloud-1.png"
 ---
 

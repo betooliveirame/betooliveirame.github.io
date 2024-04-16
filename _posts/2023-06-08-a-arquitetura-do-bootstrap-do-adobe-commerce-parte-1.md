@@ -4,19 +4,13 @@ comments: true
 title: "A arquitetura do Bootstrap do Adobe Commerce | Parte 1"
 date: "2023-06-08"
 categories: 
-  - "geral"
-  - "software-engineering"
+  - arquitetura-de-software 
 tags: 
-  - "adobe-commerce"
-  - "arquitetura-de-software"
-  - "bootstrap"
-  - "desenvolvimento"
-  - "development"
-  - "engenharia-de-software"
-  - "magento"
-  - "magento2"
-  - "softwarearchitecture"
-  - "softwareengineering"
+    - arquitetura-de-software
+    - adobe-commerce
+    - desenvolvimento
+    - e-commerce
+    - tecnologia
 coverImage: "7bwkl7.jpg"
 ---
 
@@ -83,18 +77,16 @@ Por último, mas não menos importante, o arquivo realiza algumas verificações
 ![](https://betooliveira8.files.wordpress.com/2023/06/image-2.png?w=1024)
 
 Versão simplificado do arquivo /app/bootstrap.php
-
-| # | /app/bootstrap.php |
-| --- | --- |
-| 1 | Na função [error\_reporting](https://www.php.net/manual/en/function.error-reporting.php) é feito a definição do nível de exibição de erros da aplicação. Por padrão o Adobe Commerce é configurado para mostrar todos os erros através da constante E\_ALL. |
-| 2 | A função `[stream_wrapper_unregister](https://www.php.net/manual/en/function.stream-wrapper-unregister.php)()` do PHP é usada para desregistrar (ou desativar) um manipulador de protocolo (wrapper) de fluxo (stream) registrado anteriormente. No caso, aqui ao desregistrar o manipulador 'phar' você está efetivamente desativando a capacidade de acessar arquivos Phar dentro da aplicação como se fossem sistemas de arquivos. Isso é feito por razões de segurança, se você quiser evitar que o código PHP acesse arquivos Phar dessa maneira. |
-| 3 | Validação da versão do PHP. Exibindo uma mensagem de inconformidade caso não esteja instalada a versão correta no servidor. |
-| 4 | [Definições de constantes que visão ajustar o Magento para funcionar no PHP 8](https://github.com/magento/magento2/pull/34062/files) |
-| 5 | Carregamento do /app/autoload.php. responsável por configurar toda a estrutura de autoload do Adobe Commerce. |
-| 6 | C[onfigurações do `umask`](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/set-umask.html?lang=en). No Magento 2 é uma configuração que ajuda a determinar as permissões de novos arquivos e diretórios criados pelo sistema, garantindo que eles tenham as permissões adequadas para segurança e funcionamento correto. |
-| 7 | Em ENABLE\_IIS\_REWRITES, isso é uma configuração de segurança. "[Prevent Cache Poisoning](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/security/cache-poisoning.html?lang=en)" é uma configuração de segurança no Adobe Commerce que ajuda a proteger contra um tipo específico de ataque chamado "cache poisoning". |
-| 8 | Temos a ativação e execução do processo de profile. `[MAGE_PROFILER](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/mage-profiler.html?lang=en)` é uma configuração no Magento que permite a ativação do profiler. Ferramenta utilizada por desenvolvedores para identificação de "gargalos" de desemprenho no código. |
-| 9 | Depois temos a [definição do fuso horário padrão do sistema para UTC](https://www.php.net/manual/en/function.date-default-timezone-set.php). Isso é importante porque muitas funções de data e hora no PHP podem se comportar de maneira diferente dependendo do fuso horário. [E precisão numérica para operações não formatadas / não string](https://www.php.net/manual/en/ini.core.php#ini.precision). |
+/app/bootstrap.php 
+1. Na função [error\_reporting](https://www.php.net/manual/en/function.error-reporting.php) é feito a definição do nível de exibição de erros da aplicação. Por padrão o Adobe Commerce é configurado para mostrar todos os erros através da constante E\_ALL.
+2. A função `[stream_wrapper_unregister](https://www.php.net/manual/en/function.stream-wrapper-unregister.php)()` do PHP é usada para desregistrar (ou desativar) um manipulador de protocolo (wrapper) de fluxo (stream) registrado anteriormente. No caso, aqui ao desregistrar o manipulador 'phar' você está efetivamente desativando a capacidade de acessar arquivos Phar dentro da aplicação como se fossem sistemas de arquivos. Isso é feito por razões de segurança, se você quiser evitar que o código PHP acesse arquivos Phar dessa maneira.
+3. Validação da versão do PHP. Exibindo uma mensagem de inconformidade caso não esteja instalada a versão correta no servidor. 
+4. [Ajustando o Magento para funcionar no PHP 8](https://github.com/magento/magento2/pull/34062/files) 
+5. Carregamento do /app/autoload.php. responsável por configurar toda a estrutura de autoload do Adobe Commerce. 
+6. [Configurações do `umask`](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/set-umask.html?lang=en). No Magento 2 é uma configuração que ajuda a determinar as permissões de novos arquivos e diretórios criados pelo sistema, garantindo que eles tenham as permissões adequadas para segurança e funcionamento correto. 
+7. Em ENABLE\_IIS\_REWRITES, isso é uma configuração de segurança. "[Prevent Cache Poisoning](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/security/cache-poisoning.html?lang=en)" é uma configuração de segurança no Adobe Commerce que ajuda a proteger contra um tipo específico de ataque chamado "cache poisoning". 
+8. Temos a ativação e execução do processo de profile. `[MAGE_PROFILER](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/mage-profiler.html?lang=en)` é uma configuração no Magento que permite a ativação do profiler. Ferramenta utilizada por desenvolvedores para identificação de "gargalos" de desemprenho no código. 
+9. Depois temos a [definição do fuso horário padrão do sistema para UTC](https://www.php.net/manual/en/function.date-default-timezone-set.php). Isso é importante porque muitas funções de data e hora no PHP podem se comportar de maneira diferente dependendo do fuso horário. [E precisão numérica para operações não formatadas / não string](https://www.php.net/manual/en/ini.core.php#ini.precision). 
 
 Calma ainda vamos ver e entender como o autoload é utilizado na aplicação nos tópicos abaixo.
 
@@ -114,13 +106,12 @@ Fim do "parenteses" e voltando autoload.php:
 
 Visão simplificada do arquivo /app/autoload.php
 
-| # | /`app/autoload.php` |
-| --- | --- |
-| 1 | Define algumas constantes importantes como a "BP" (acrônimo para BASE PATH), que armazena o path da pasta root da aplicação, e a VENDOR\_PATH que armazena o path do arquivo onde é definido o path da pasta vendor do composer, no caso, o `app/etc/vendor_path.php`. |
-| 2 | Utiliza a constante VENDOR\_PATH para fazer o include do arquivo `autoload.php` do composer, especificamente o `vendor/autoload.php`. |
-| 3 | Finaliza "injetando" o composer autoload no método `AutoloaderRegistry::registerAutoloader`, "envelopado" pela classe `ClassLoaderWrapper`. Isso encapsula o acesso dentro da aplicação ao autoload do composer, aumentando a modularidade e a flexibilidade do sistema como podemos ver [aqui](https://github.com/magento/magento2/blob/d9d3d9b40bfdc683ac7c6a26b605481a25e3493e/app/bootstrap.php#LL46C35-L46C53) e [aqui](https://github.com/magento/magento2/blob/d9d3d9b40bfdc683ac7c6a26b605481a25e3493e/lib/internal/Magento/Framework/App/Bootstrap.php#L140). |
+/`app/autoload.php` |
+1. Define algumas constantes importantes como a "BP" (acrônimo para BASE PATH), que armazena o path da pasta root da aplicação, e a VENDOR\_PATH que armazena o path do arquivo onde é definido o path da pasta vendor do composer, no caso, o `app/etc/vendor_path.php`.
+2. Utiliza a constante VENDOR\_PATH para fazer o include do arquivo `autoload.php` do composer, especificamente o `vendor/autoload.php`.
+3. Finaliza "injetando" o composer autoload no método `AutoloaderRegistry::registerAutoloader`, "envelopado" pela classe `ClassLoaderWrapper`. Isso encapsula o acesso dentro da aplicação ao autoload do composer, aumentando a modularidade e a flexibilidade do sistema como podemos ver [aqui](https://github.com/magento/magento2/blob/d9d3d9b40bfdc683ac7c6a26b605481a25e3493e/app/bootstrap.php#LL46C35-L46C53) e [aqui](https://github.com/magento/magento2/blob/d9d3d9b40bfdc683ac7c6a26b605481a25e3493e/lib/internal/Magento/Framework/App/Bootstrap.php#L140).
 
-### Classe \\Magento\\Framework\\App\\Bootstrap: O start da camada da aplicação
+### Classe ```\\Magento\\Framework\\App\\Bootstrap::create``` O start da camada da aplicação
 
 Bom até aqui vimos a estrutura e o que acontece na camada de baixo nível da aplicação do Adobe Commerce através dos arquivo pub/index.php, app/bootstrap.php e app/autoload.php. Agora vamos começar a olhar como funciona a camada da aplicação. Para isso vamos voltar ao arquivo pub/index.php e veremos que nele temos o seguinte trecho de código:
 
@@ -128,7 +119,7 @@ Bom até aqui vimos a estrutura e o que acontece na camada de baixo nível da ap
 
 Bootstrap Singleton, criação e execução da aplicação no arquivo index.php
 
-#### O método \\Magento\\Framework\\App\\Bootstrap::create
+#### O método ```\\Magento\\Framework\\App\\Bootstrap::create```
 
 Aqui temos o carregamento do [singleton](https://refactoring.guru/pt-br/design-patterns/singleton) \\Magento\\Framework\\App\\Bootstrap através do método "[create](https://github.com/magento/magento2/blob/d9d3d9b40bfdc683ac7c6a26b605481a25e3493e/lib/internal/Magento/Framework/App/Bootstrap.php#L121)", responsável por retornar uma instancia da própria classe Bootstrap. E o que é "singleton"? E porque ele é utilizado na inicialização do Adobe Commerce.
 
@@ -170,11 +161,11 @@ Isto não apenas torna a criação de objetos mais simples e limpa, mas também 
 
 Método createObjectManagerFactory na classe Bootstrap
 
-Observe que aqui ele chama novamente o método createFilesystemDirectoryList, já explicado anteriormente. Além disso ele também obtêm uma instancia da classe Magento\\Framework\\Filesystem\\DriverPool. A classe `Magento\Framework\Filesystem\DriverPool` no Adobe Commerce é usada para gerenciar um conjunto de drivers de sistema de arquivos. Um driver de sistema de arquivos é uma classe que fornece métodos para interagir com um sistema de arquivos, como ler, escrever e excluir arquivos. Por padrão, o `DriverPool` inclui drivers para interagir com o sistema de arquivos local, bem como para interagir com sistemas de arquivos remotos via FTP ou HTTP. No entanto, você também pode adicionar seus próprios drivers personalizados ao `DriverPool` se precisar.
+Observe que aqui ele chama novamente o método createFilesystemDirectoryList, já explicado anteriormente. Além disso ele também obtêm uma instancia da classe ```Magento\\Framework\\Filesystem\\DriverPool```. A classe ```Magento\Framework\Filesystem\DriverPool``` no Adobe Commerce é usada para gerenciar um conjunto de drivers de sistema de arquivos. Um driver de sistema de arquivos é uma classe que fornece métodos para interagir com um sistema de arquivos, como ler, escrever e excluir arquivos. Por padrão, o `DriverPool` inclui drivers para interagir com o sistema de arquivos local, bem como para interagir com sistemas de arquivos remotos via FTP ou HTTP. No entanto, você também pode adicionar seus próprios drivers personalizados ao `DriverPool` se precisar.
 
-Obtém uma instancia da classe Magento\\Framework\\Config\\File\\ConfigFilePool que no Adobe Commerce é usada para gerenciar e centralizar o acesso aos arquivo de configuração env.php e config.php. Ao manter uma lista centralizada de arquivos de configuração, a `ConfigFilePool` ajuda a garantir que todas as partes da aplicação estejam trabalhando com as mesmas configurações. Isso é crucial para a consistência do comportamento da aplicação e para evitar a duplicação de dados de configuração. Também gerencia as variações dos arquivos de configuração: .dist.php e .local.php.
+Obtém uma instancia da classe ```Magento\\Framework\\Config\\File\\ConfigFilePool``` que no Adobe Commerce é usada para gerenciar e centralizar o acesso aos arquivo de configuração env.php e config.php. Ao manter uma lista centralizada de arquivos de configuração, a `ConfigFilePool` ajuda a garantir que todas as partes da aplicação estejam trabalhando com as mesmas configurações. Isso é crucial para a consistência do comportamento da aplicação e para evitar a duplicação de dados de configuração. Também gerencia as variações dos arquivos de configuração: .dist.php e .local.php.
 
-Bom uma vez instanciadas as classes auxiliares são injetadas na classe \\Magento\\Framework\\App\\_ObjectManagerFactory_ que obviamente retorna uma instancia do ObjectManager.
+Bom uma vez instanciadas as classes auxiliares são injetadas na classe ```\\Magento\\Framework\\App\\ObjectManagerFactory``` que obviamente retorna uma instancia do ObjectManager.
 
 E para finalizar o método "create" vemos que no final é dado um new na própria classe Bootstrap através de [self](https://www.php.net/manual/en/language.oop5.paamayim-nekudotayim.php); Passando uma instancia da factory do ObjectManager, a pasta root da aplicação e o atributo $initParams retornando lá no arquivo /pub/index.php temos uma instancia da classe Bootstrap com as configurações do ambiente.
 
