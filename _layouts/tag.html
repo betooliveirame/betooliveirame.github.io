@@ -1,7 +1,7 @@
 ---
 layout: page 
 ---
-
+<h1 class="mb-4">Tag: {{ page.tag }}</h1>
 <div class="archive-list">
     {% for post in site.tags[page.tag] %}
     {% include summary-post.html post=post %}
