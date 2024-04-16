@@ -5,19 +5,14 @@ title: "O desenvolvimento de software não é uma coisa linear."
 date: "2023-04-26"
 author: "Herbert de Oliveira"
 categories: 
-  - "geral"
-  - "software-management"
+  - proffisionalismo
 tags: 
-  - História da computação
-  - Evolução tecnológica
-  - Metodologias de desenvolvimento
-  - Manifesto Ágil
-  - Linguagens de programação
-  - Frameworks de desenvolvimento
-  - Complexidade do desenvolvimento de software
-  - Colaboração entre negócios e tecnologia
-  - Excelência na codificação
-  - Valor do software para o negócio
+    - profissionalismo
+    - desenvolvimento
+    - metodologias-ageis
+    - padroes-de-qualidade
+    - tecnologia
+
 coverImage: "code.jpg"
 ---
 

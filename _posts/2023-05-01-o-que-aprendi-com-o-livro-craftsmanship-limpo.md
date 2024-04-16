@@ -5,21 +5,18 @@ title: "O que aprendi com o livro Craftsmanship Limpo."
 date: "2023-05-01"
 author: "Herbert de Oliveira"
 categories: 
-  - "code-quality"
-  - "geral"
-  - "profissionalismo"
-  - "software-management"
+  - livros
+
 tags: 
-  - Robert C. Martin
-  - Clean Code
-  - Craftsmanship Limpo
-  - Desenvolvimento de software
-  - Metodologias ágeis
-  - Test Driven Development (TDD)
-  - Refatoração
-  - Design de software
-  - Qualidade de código
-  - Ética profissional
+    - livros
+    - profissionalismo
+    - metodologias-ageis
+    - clean-code
+    - comunicacao
+    - desenvolvimento
+    - mercado-digital
+    - padroes-de-qualidade
+    - tecnologia
 coverImage: "craftmanship.jpg"
 ---
 

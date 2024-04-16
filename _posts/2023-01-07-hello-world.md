@@ -4,19 +4,17 @@ comments: true
 title: "Hello World."
 date: "2023-01-07"
 categories: 
-  - "geral"
+  - geral
 author: "Herbert de Oliveira"
 tags:
-  - programação
-  - tecnologia
-  - engenharia de software
-  - e-commerce
-  - desenvolvimento web
-  - escrita
-  - melhoria contínua
-  - compartilhamento de conhecimento
-  - objetivos pessoais
-  - constância
+    - arquitetura-de-software
+    - desenvolvimento
+    - tecnologia
+    - e-commerce
+    - mercado-digital
+    - profissionalismo
+    - comunicacao
+
 coverImage: "maxresdefault.jpg"
 ---
 

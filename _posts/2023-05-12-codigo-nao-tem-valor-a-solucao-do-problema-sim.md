@@ -5,14 +5,15 @@ title: "Código não tem valor. A solução do problema sim!"
 date: "2023-05-12"
 author: "Herbert de Oliveira"
 categories: 
-  - "profissionalismo"
+  - profissionalismo
+
 tags:
-  - programação
-  - tecnologia
-  - inteligência artificial
-  - desenvolvimento de software
-  - futuro
-  - trabalho remoto
+    - desenvolvimento
+    - inteligencia-artificial
+    - mercado-digital
+    - profissionalismo
+    - tecnologia
+    - padroes-de-qualidade
 coverImage: "captura-de-tela-de-2023-05-11-23-26-19.png"
 ---
 
