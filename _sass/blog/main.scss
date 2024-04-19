@@ -25,3 +25,8 @@ $body-font: "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial
     font-family: $body-font;
   }
 }
+
+// fix disqus dark mode
+[data-bs-theme="dark"] {
+    color-scheme: unset;
+}
