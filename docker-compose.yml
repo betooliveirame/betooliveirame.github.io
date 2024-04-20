@@ -6,4 +6,7 @@ services:
     volumes:
       - .:/site
     ports:
+      - '4000:4000'
       - '80:4000'
+    environment:
+      - JEKYLL_ENV=development
