@@ -50,3 +50,6 @@ tag_title_prefix: "Tag: "
 disqus:
   shortname: herbert-de-oliveira-beto
   url: https://betooliveira.com
+
+compress_html:
+  ignore: all
