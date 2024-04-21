@@ -11,7 +11,7 @@ tags:
     - desenvolvimento
     - e-commerce
     - tecnologia
-coverImage: "bootstrap.jpeg"
+coverImage: "bootstrap.webp"
 ---
 
 Olá novamente, conforme prometido, vamos continuar nossa exploração técnica da arquitetura do Bootstrap do Adobe Commerce. Se você está chegando agora, recomendo fortemente que leia a primeira parte deste artigo, onde explicamos profundamente o processo de bootstrap do Adobe Commerce.
@@ -26,7 +26,7 @@ Este post, assim como o primeiro será altamente técnico e voltado para aqueles
 
 Voltando ao pub/index.php.....
 
-![](/assets/images/image-8.png){:class="img-fluid"}
+![](/assets/images/image-8.webp){:class="img-fluid"}
 
 Estrutura básica do index.php
 
@@ -82,7 +82,7 @@ Quer ir além? Dá uma olhada nos arquivos bin/magento e ```vendor/magento/frame
 
 Que tal agora explorarmos o método 'createApplication' da classe Bootstrap? Como veremos, os acontecimentos que se desdobram dentro deste método são realmente bem simples, mas estrategicamente fundamentais para a execução da aplicação..
 
-![](/assets/images/image-9.png){:class="img-fluid"}
+![](/assets/images/image-9.webp){:class="img-fluid"}
 
 Função ```createApplication``` da classe Bootstrap
 
@@ -98,7 +98,7 @@ O método ```run()``` do Adobe Commerce é o motor que coloca a aplicação para
 
 O método ```initErrorHandler()``` é crucial para a forma como o sistema lida com erros e exceções.
 
-![](/assets/images/image-10.png){:class="img-fluid"}
+![](/assets/images/image-10.webp){:class="img-fluid"}
 
 Função ```initErrorHandler``` da classe Boostrap
 
@@ -114,7 +114,7 @@ Isso proporciona uma grande flexibilidade e poder na detecção e na manipulaç�
 
 Já o método ```assertMaintenance()``` da classe é usado para verificar se o sistema está em modo de manutenção.
 
-![](/assets/images/image-11.png){:class="img-fluid"}
+![](/assets/images/image-11.webp){:class="img-fluid"}
 
 Função ```assertMaintenance``` da classe Bootstrap
 

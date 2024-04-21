@@ -17,7 +17,7 @@ tags:
     - mercado-digital
     - padroes-de-qualidade
     - tecnologia
-coverImage: "craftmanship.jpg"
+coverImage: "craftmanship.webp"
 ---
 
 Craftsmanship limpo é um daqueles livros inspiradores e não poderia ser diferente afinal o mesmo vem do Robert C. Martin, uma lenda e inspiração na área de desenvolvimento de software em geral. Este é com certeza um livro divisor de águas, assim como foi "clean code" na minha vida. Sempre digo para meus colegas que a carreira de um programador se divide em duas partes: antes e depois de ler "clean code". O mesmo posso dizer sobre "Craftsmanship Limpo". Este livro se destaca principalmente pelo fato de reforçar as características profissionais da nossa área.

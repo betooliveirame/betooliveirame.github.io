@@ -11,7 +11,7 @@ tags:
     - desenvolvimento
     - tecnologia
 
-coverImage: "sonarcloud-1.png"
+coverImage: "sonarcloud-1.webp"
 ---
 
 ![](https://betooliveira8.files.wordpress.com/2023/04/image-2.png?w=1024)

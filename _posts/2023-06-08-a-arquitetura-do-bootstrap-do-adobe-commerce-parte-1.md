@@ -11,7 +11,7 @@ tags:
     - desenvolvimento
     - e-commerce
     - tecnologia
-coverImage: "7bwkl7.jpg"
+coverImage: "7bwkl7.webp"
 ---
 
 Neste novo post quero explorar algumas questões mais técnicas e que envolva um dos assuntos que mais me interesso, que é a arquitetura de software em geral. Então resolvi falar um pouco sobre arquitetura da plataforma Adobe Commerce (Magento 2). Plataforma a qual já trabalho a alguns anos e já sofri um pouco com ela. A minha ideia a aqui é explicar sobre o bootstrap da aplicação. Então este post será BEM técnico. E voltado para quem quer sair do básico sobre a plataforma e se aprofundar um pouco mais em como as coisas acontecem por debaixo dos panos.
@@ -50,7 +50,7 @@ Como qualquer aplicação tradicional PHP, o processo começa aqui. Mais precisa
 
 Bom, vamos então analisar o arquivo index.php:
 
-![](https://betooliveira8.files.wordpress.com/2023/06/image-1.png?w=1024)
+![](https://betooliveira8.files.wordpress.com/2023/06/image-1.webp?w=1024)
 
 Versão simplificada do arquivo /pub/index.php
 
@@ -74,7 +74,7 @@ O `bootstrap.php` tambem se encarrega da inicialização do Autoloader do Compos
 
 Por último, mas não menos importante, o arquivo realiza algumas verificações de ambiente e versão para garantir que o ambiente atual suporte a execução do Adobe Commerce. Isso envolve a verificação da versão do PHP.
 
-![](https://betooliveira8.files.wordpress.com/2023/06/image-2.png?w=1024)
+![](https://betooliveira8.files.wordpress.com/2023/06/image-2.webp?w=1024)
 
 Versão simplificado do arquivo /app/bootstrap.php
 /app/bootstrap.php 
@@ -102,7 +102,7 @@ No Adobe Commerce, isso é especialmente importante devido à grande quantidade 
 
 Fim do "parenteses" e voltando autoload.php:
 
-![](https://betooliveira8.files.wordpress.com/2023/06/image-3.png?w=1024)
+![](https://betooliveira8.files.wordpress.com/2023/06/image-3.webp?w=1024)
 
 Visão simplificada do arquivo /app/autoload.php
 
@@ -115,7 +115,7 @@ Visão simplificada do arquivo /app/autoload.php
 
 Bom até aqui vimos a estrutura e o que acontece na camada de baixo nível da aplicação do Adobe Commerce através dos arquivo pub/index.php, app/bootstrap.php e app/autoload.php. Agora vamos começar a olhar como funciona a camada da aplicação. Para isso vamos voltar ao arquivo pub/index.php e veremos que nele temos o seguinte trecho de código:
 
-![](https://betooliveira8.files.wordpress.com/2023/06/image-4.png?w=1024)
+![](https://betooliveira8.files.wordpress.com/2023/06/image-4.webp?w=1024)
 
 Bootstrap Singleton, criação e execução da aplicação no arquivo index.php
 
@@ -131,7 +131,7 @@ Por exemplo, um objeto de inicialização de aplicação pode ser responsável p
 
 O padrão Singleton ajuda a evitar esses problemas, garantindo que apenas uma instância do objeto de inicialização seja criada (Magento\\Framework\\App\\Bootstrap). A instância Singleton é criada na primeira vez que o objeto é necessário, e a mesma instância é retornada em todas as chamadas subsequentes. Se quiser entender um pouco mais recomendo está leitura [aqui](https://refactoring.guru/pt-br/design-patterns/singleton).
 
-![](https://betooliveira8.files.wordpress.com/2023/06/image-5.png?w=1024)
+![](https://betooliveira8.files.wordpress.com/2023/06/image-5.webp?w=1024)
 
 Método create na classe Bootstrap
 
@@ -143,7 +143,7 @@ Bom, com essas duas instâncias em mãos, ele as entrega para a classe `Magento\
 
 Olha que interessante! Dá uma olhada no método `createFilesystemDriverPool` e vê o que poderia ser feito através do parâmetro `$initParams` no método `create`.
 
-![](https://betooliveira8.files.wordpress.com/2023/06/image-6.png?w=1024)
+![](https://betooliveira8.files.wordpress.com/2023/06/image-6.webp?w=1024)
 
 Método `createFilesystemDriverPool` na classe Bootstrap
 
@@ -157,7 +157,7 @@ Na prática, sempre que você precisa de uma instância de uma classe, em vez de
 
 Isto não apenas torna a criação de objetos mais simples e limpa, mas também torna o código muito mais testável e modular, pois você pode substituir as dependências por stubs ou mocks nos testes, ou até mesmo substituir uma dependência por uma implementação diferente em tempo de execução. Quem programou no magento 1 sabe como era escrever testes unitários nele. Se ainda tem alguém que coda no magento 1 fica a [dica](https://github.com/betooliveirame/codepcetion-magento) kkkk
 
-![](https://betooliveira8.files.wordpress.com/2023/06/image-7.png?w=1024)
+![](https://betooliveira8.files.wordpress.com/2023/06/image-7.webp?w=1024)
 
 Método createObjectManagerFactory na classe Bootstrap
 

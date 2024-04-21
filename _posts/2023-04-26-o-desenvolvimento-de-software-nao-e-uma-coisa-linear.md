@@ -13,7 +13,7 @@ tags:
     - padroes-de-qualidade
     - tecnologia
 
-coverImage: "code.jpg"
+coverImage: "code.webp"
 ---
 
 O desenvolvimento de software é algo antigo, mesmo antes de T[uring](https://pt.wikipedia.org/wiki/Alan_Turing) tivemos muitos outros. Podemos descer até [Babage](https://pt.wikipedia.org/wiki/M%C3%A1quina_anal%C3%ADtica) se for o caso, mas desde sempre sabemos que: "D**esenvolver software não é fácil**!".

@@ -14,7 +14,7 @@ tags:
     - profissionalismo
     - tecnologia
     - padroes-de-qualidade
-coverImage: "captura-de-tela-de-2023-05-11-23-26-19.png"
+coverImage: "captura-de-tela-de-2023-05-11-23-26-19.webp"
 ---
 
 Quando começamos a programar e aprendemos as primeiras estruturas lógicas de uma linguagem de programação, ficamos maravilhados com o poder que adquirimos, e isso nos faz sentir que somos verdadeiros alquimistas em busca da pedra filosofal. Até que descobrimos que nem tudo o que reluz é ouro.
