@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: "Do preto e branco ao cinza: Aprenda a lidar com os desafios Fora do código"
+title: "Do preto e branco ao cinza: Aprenda a lidar com os desafios fora do código"
 date: "2024-11-13"
 categories: 
   - profissionalismo
