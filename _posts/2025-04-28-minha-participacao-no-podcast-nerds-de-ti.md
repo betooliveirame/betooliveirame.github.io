@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: "Minha participação no podcast Nerds de TI falando sobre lidereança"
+title: "Minha participação no podcast Nerds de TI falando sobre liderança"
 date: "2025-04-28"
 categories: 
   - profissionalismo
