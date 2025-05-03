@@ -10,7 +10,7 @@
         <time datetime="{{ include.post.date | date_to_xmlschema }}" class="post-date">
           {% include locale-date.html date=include.post.date format="%-d %B %Y" lang="br" %}
         </time>&nbsp;|&nbsp;
-        {% include read-time.html content=include.post.content post=include.post %} Minutos de leitura
+        Tempo de leitura: {% include read-time.html content=include.post.content post=include.post %}
       </span>
       <h2 class="post-title mb-1 fs-3">
         <a class="link-light link-underline link-underline-opacity-0 link-underline-opacity-100-hover" href="{{ include.post.url | relative_url }}">
