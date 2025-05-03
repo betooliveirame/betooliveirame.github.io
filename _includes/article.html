@@ -15,13 +15,6 @@
       </p>
       {% include share-buttons.html %}
     </div>
-    {% if include.post.coverImage %}
-    <div class="col-12">
-      <a href="{{ include.post.url | relative_url }}">
-        <img src="/assets/images/{{ include.post.coverImage }}" class="post-image post-image-home img-fluid rounded" alt="Cover Image" style="width: 100%;">
-      </a>
-    </div>
-    {% endif %}
     <div class="col-12">
       <div class="post-content fs-5">
         {{ include.post.content }}
