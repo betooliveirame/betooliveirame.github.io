@@ -12,3 +12,12 @@ backToTopButton.addEventListener("click", () => {
 });
 
 toggleButtonVisibility();
+
+// open tagged links in a background tab, keeping focus on the current tab
+document.querySelectorAll('.post-content a.bg-tab[target="_blank"]').forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    window.open(link.href, "_blank");
+    window.focus();
+  });
+});
