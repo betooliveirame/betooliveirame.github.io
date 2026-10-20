@@ -13,7 +13,7 @@ tags:
   - arquitetura-de-software
   - desenvolvimento
   - tecnologia
-coverImage: "automatizando-meus-projetos-com-ia/capa.webp"
+coverImage: "automatizando-meus-projetos-com-ia/capa-quadrada.webp"
 excerpt: "Um relato sobre automatizar projetos com OpenSpec, skills e agentes de IA: os avanços no desenvolvimento, os desafios de validação e as contas que aparecem pelo caminho."
 ---
 
