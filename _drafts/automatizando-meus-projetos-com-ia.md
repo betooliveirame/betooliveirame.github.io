@@ -142,5 +142,7 @@ Validar software sempre custou tempo e dinheiro. O que mudou no meu dia a dia fo
 
 Ainda estou ajustando tudo isso. Quero continuar aumentando a autonomia dos agentes, reduzir as interrupções e entender melhor o custo de cada entrega. Também quero compartilhar o que funcionar e o que der errado, porque tem bastante aprendizado acontecendo entre uma issue e um merge.
 
-Eu esperava escrever menos código. Só não imaginava que passaria tanto tempo olhando para uma barra de minutos do GitHub Actions.
+Eu esperava escrever menos código. Mas, como vocês podem ver, minha atenção acabou se voltando para outros pontos do fluxo de desenvolvimento automatizado que ainda estou tentando resolver.
+
+Conforme esse processo for evoluindo, vou trazendo as novidades e compartilhando os aprendizados com vocês.
 
