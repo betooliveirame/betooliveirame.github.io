@@ -1,7 +1,6 @@
 ---
 layout: post
-comments: false
-published: false
+comments: true
 title: "Automatizando meus projetos com IA: avanços, limites e algumas contas"
 date: "2026-10-19 23:23:54 -0300"
 author: "Herbert de Oliveira"
